@@ -1,0 +1,117 @@
+body {
+    background: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.vertical-nav {
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #000;
+    color: white;
+    padding-top: 20px;
+    z-index: 100;
+    transition: transform 0.3s ease-in-out;
+}
+
+.vertical-nav.collapsed {
+    transform: translateX(-100%);
+}
+
+.nav-link {
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #495057;
+}
+
+.nav-link.active {
+    background-color: #ffffff;
+    color: black;
+}
+
+/* Page Content */
+.page-content {
+    margin-left: 17rem;
+    padding: 80px;
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    transition: margin-left 0.3s ease;
+}
+
+.content-section {
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.content-section img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Yellow Toggle Button */
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background:#FFD700;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 101;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Yellow Button Inside Sidebar */
+.sidebar-btn {
+    background:#FFD700;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .vertical-nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+    .vertical-nav.collapsed {
+        transform: translateX(0);
+    }
+
+    .page-content {
+        margin-left: 0;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+}
