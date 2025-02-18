@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+     <!--------------------Bootstrap CSS Start---------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+ <!--------------------Bootstrap JS  Start---------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!------------------------------Font-awesome Start ------------------------------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!----------------------------------------Foldser Css Start ----------------------------------------------->
+    <link rel="stylesheet" href="css/nav1.css">
+<link rel="stylesheet" href="css/ViewProject.css">
+</head>
+<body>
+<div>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Name on the Left -->
+            <a class="navbar-brand text-white"
+            style="margin-left:25px" href="Index.html"> Shubham  verma </a>
+
+
+            <!-- Search Bar (Centered on Desktop) with Icon -->
+            <div class="search-bar mx-auto">
+                <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+
+            <!-- Buttons on the Right -->
+            <div class="d-flex align-items-center justify-content-center nav-buttons">
+                <a href="Document/cv shubham.pdf" class="btn download-cv me-2">Download CV</a>
+                <span class="mobile-number text-white">📞 +91 9451348244</span>
+            </div>
+
+            <!-- 3-dot menu for mobile -->
+            <div class="dropdown mobile-menu">
+                <button class="btn text-white" type="button" id="mobileMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="mobileMenu">
+                    <li><a class="dropdown-item" href="#">Download CV</a></li>
+                    <li><a class="dropdown-item" href="#">📞 +91 9451348244</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+</div>
+    <!-- Toggle Button (Fixed on Page) -->
+    <button class="toggle-btn" onclick="toggleSidebar()"><i class="fa-sharp fa-solid fa-bars"></i></button>
+
+    <!-- Sidebar -->
+    <div class="vertical-nav" id="sidebar">
+<br><br>
+<h4 class="text-center text-white">
+    <a href="Index.html" class="text-white text-decoration-none">
+        <i class="fa-sharp fa-solid fa-house"></i>&nbsp;Home
+    </a>
+</h4>
+
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" onclick="showContent('lms', this)">Library Management System</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="showContent('ecommerce', this)">E-Commerce</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="showContent('college', this)">College Management</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="showContent('event', this)">Event Management</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div id="lms" class="content-section">
+            <h2>Library Management System</h2>
+            <img src="image/LMS.jpg" alt="Library Management System">
+            <p>A Python Django-based system to manage library books, users, and transactions efficiently.</p>
+        </div>
+        <div id="ecommerce" class="content-section">
+            <h2>E-Commerce</h2>
+            <img src="image/ecommerce.jpg" alt="E-Commerce">
+            <p>An online shopping platform with secure payment and user-friendly experience.</p>
+        </div>
+        <div id="college" class="content-section">
+            <h2>College Management</h2>
+            <img src="image/college.jpg" alt="College Management">
+            <p>A web-based system to manage student records, courses, and faculty information.</p>
+        </div>
+        <div id="event" class="content-section">
+            <h2>Event Management</h2>
+            <img src="image/event.jpg" alt="Event Management">
+            <p>A system designed to plan and organize events efficiently with scheduling and notifications.</p>
+        </div>
+    </div>
+     <!--footer-->
+     <section>
+        <footer>
+          <div class="footer-content">
+            <!-- About Us Section -->
+            <div class="footer-section">
+              <h3>Shubham Verma</h3>
+              <p>
+                My goal is to deliver maximum value, drive efficiencies, and
+                support the long-term growth and vision of the company.
+              </p>
+            </div>
+  
+            <!-- Contact Us Section -->
+            <div class="footer-section">
+              <h3>Contact Us</h3>
+              <p>
+                Email:
+                <a
+                  href="mailto:shubhamverma945134@gmail.com"
+                  style="color: #1da1f2"
+                >
+                  shubhamverma945134@gmail.com
+                </a>
+              </p>
+              <p>Phone: +91 9451348244</p>
+              <div class="social-media">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  aria-label="Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+  
+            <!-- Visit Us Section -->
+            <div class="footer-section">
+              <h3>Visit Us</h3>
+              <div class="map-container">
+                <iframe
+                  loading="lazy"
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  style="border: 0"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.019984282839!2d-122.0842496846923!3d37.42206597982571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24c2f2b9e3b%3A0x2b0b7e1b2b0b7e1b!2sGoogleplex!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+                  allowfullscreen
+                  aria-label="Google Map Location"
+                ></iframe>
+              </div>
+            </div>
+  
+            <!-- Newsletter Section -->
+            <div class="footer-section newsletter">
+              <h3>Project</h3>
+              <p>
+                Subscribe to our newsletter to stay updated on our latest news and
+                offers.
+              </p>
+              <form>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                  aria-label="Email"
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 20px"></div>
+        </footer>
+      </section>
+
+    <script>
+        // Function to display the correct content section
+        function showContent(id, link) {
+            document.querySelectorAll('.content-section').forEach(section => section.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+            document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+            link.classList.add('active');
+        }
+
+        // Set default content
+        document.addEventListener('DOMContentLoaded', () => {
+            showContent('lms', document.querySelector('.nav-link'));
+        });
+
+        // Toggle Sidebar
+        function toggleSidebar() {
+            let sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('collapsed');
+        }
+    </script>
+
+</body>
+</html>
